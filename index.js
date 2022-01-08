@@ -3,7 +3,8 @@ import { hello } from './say/index.js'
 import readline from 'readline';
 
 const karenin = new Karenin()
-console.log(karenin)
+
+console.log(karenin.config)
 
 hello()
 
