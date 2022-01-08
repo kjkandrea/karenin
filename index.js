@@ -12,11 +12,12 @@ const rl = readline.createInterface({
 });
 
 const recur = () => rl.question('Waiting your command :\n', command => {
-  switch (command.trim()) {
-    case 'config name':
+  command = command.trim()
+  switch (true) {
+    case command === 'config name':
       answer(config.name)
       break;
-    case 'config age':
+    case command === 'config age':
       answer(config.age)
       break;
   }
