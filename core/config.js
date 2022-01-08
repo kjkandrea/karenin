@@ -1,5 +1,5 @@
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const config = require("./config.json");
+export const config = require("./config.json");
 
-export default config;
+export const updateName = newName => console.log('update %s', newName)

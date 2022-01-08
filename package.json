@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/kjkandrea/karenin#readme",
   "dependencies": {
     "chalk": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
