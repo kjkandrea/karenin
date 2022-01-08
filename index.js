@@ -3,6 +3,7 @@ import { say, answer } from './api/log.js'
 import readline from 'readline';
 import chalk from 'chalk';
 import open from './api/open.js'
+import { google } from './const/url.js'
 
 say('Woof! 🐕')
 
@@ -18,6 +19,10 @@ const recur = () => rl.question(chalk.blue(`${config.name} Waiting your command 
     case command === 'open github':
       answer('Woof! 🐕')
       open(config.owner.github.url)
+      break;
+    case command === 'open google':
+      answer('Woof! 🐕')
+      open(google)
       break;
     // Reads
     case command === 'config name':
