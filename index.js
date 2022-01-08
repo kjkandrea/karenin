@@ -1,20 +1,17 @@
 import Karenin from './core/constructor.js'
-import { hello } from './say/index.js'
+import { say, answer } from './api/log.js'
 import readline from 'readline';
 
-const karenin = new Karenin()
+const { config } = new Karenin()
 
-console.log(karenin.config)
-
-hello()
+say('Woof! 🐕')
 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
-rl.question('What do you think of Karenin? ', (answer) => {
-  console.log(`Thank you for your valuable feedback: ${answer}`);
-
+rl.question('Wating your command :\n', c => {
+  answer(c)
   rl.close();
 });
