@@ -1,5 +1,5 @@
 import chalk from 'chalk';
 
-const { log } = console
+const log = text => console.log(chalk.cyan(text))
 
-export const hello = () => log(chalk.cyan('Woof! 🐕'))
+export const hello = () => log('Woof! 🐕')
