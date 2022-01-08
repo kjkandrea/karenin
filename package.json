@@ -1,0 +1,20 @@
+{
+  "name": "karenin",
+  "version": "1.0.0",
+  "description": "A little puppy made with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjkandrea/karenin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjkandrea/karenin/issues"
+  },
+  "homepage": "https://github.com/kjkandrea/karenin#readme"
+}
