@@ -1,9 +1,7 @@
-import Karenin from './core/constructor.js'
+import config from './core/config.js'
 import { say, answer } from './api/log.js'
 import readline from 'readline';
 import chalk from 'chalk';
-
-const { config } = new Karenin()
 
 say('Woof! 🐕')
 
