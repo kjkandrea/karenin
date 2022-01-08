@@ -11,7 +11,15 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Wating your command :\n', c => {
-  answer(c)
-  rl.close();
+const recur = () => rl.question('Wating your command :\n', command => {
+  switch (command) {
+    case 'config name':
+      answer(config.name)
+      break;
+    case 'config age':
+      answer(config.age)
+      break;
+  }
+  recur()
 });
+recur()
