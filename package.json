@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A little puppy made with nodejs",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
