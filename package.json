@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/kjkandrea/karenin/issues"
   },
-  "homepage": "https://github.com/kjkandrea/karenin#readme"
+  "homepage": "https://github.com/kjkandrea/karenin#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
 }
