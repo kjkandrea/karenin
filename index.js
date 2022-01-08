@@ -18,7 +18,9 @@ const recur = () => rl.question(chalk.blue(`${config.name} Waiting your command 
       answer(config.name)
       break;
     case command === 'config age':
-      answer(config.age)
+      const createYear = Number(config.createDateYmd.substring(0, 4))
+      const date = new Date()
+      answer(createYear + 1 - date.getFullYear())
       break;
     // Updates
     case /^config name \w/.test(command):
