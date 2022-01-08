@@ -1,1 +1,9 @@
-{"name":"karenin","createDateYmd":"2022-01-08"}
+{
+  "name": "karenin",
+  "createDateYmd": "2022-01-08",
+  "owner": {
+    "github": {
+      "url": "https://github.com/kjkandrea"
+    }
+  }
+}
