@@ -2,6 +2,7 @@ import {config, update } from './core/config.js'
 import { say, answer } from './api/log.js'
 import readline from 'readline';
 import chalk from 'chalk';
+import open from './api/open.js'
 
 say('Woof! 🐕')
 
@@ -13,6 +14,11 @@ const rl = readline.createInterface({
 const recur = () => rl.question(chalk.blue(`${config.name} Waiting your command :\n`), async command => {
   command = command.trim()
   switch (true) {
+    // Actions
+    case command === 'open github':
+      answer('Woof! 🐕')
+      open(config.owner.github.url)
+      break;
     // Reads
     case command === 'config name':
       answer(config.name)
