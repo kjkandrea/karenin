@@ -11,7 +11,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const recur = () => rl.question('Wating your command :\n', command => {
+const recur = () => rl.question('Waiting your command :\n', command => {
   switch (command.trim()) {
     case 'config name':
       answer(config.name)
