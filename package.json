@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/kjkandrea/karenin#readme",
   "dependencies": {
-    "chalk": "^5.0.0"
+    "chalk": "^5.0.0",
+    "open": "^8.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

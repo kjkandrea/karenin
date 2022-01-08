@@ -1,0 +1,1 @@
+export const google = 'https://www.google.com/'
