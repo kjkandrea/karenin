@@ -1,5 +1,9 @@
+import Karenin from './core/constructor.js'
 import { hello } from './say/index.js'
 import readline from 'readline';
+
+const karenin = new Karenin()
+console.log(karenin)
 
 hello()
 
