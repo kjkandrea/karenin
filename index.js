@@ -12,7 +12,7 @@ const rl = readline.createInterface({
 });
 
 const recur = () => rl.question('Wating your command :\n', command => {
-  switch (command) {
+  switch (command.trim()) {
     case 'config name':
       answer(config.name)
       break;
