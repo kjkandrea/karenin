@@ -10,7 +10,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const recur = () => rl.question(chalk.blue(`${config.name} Waiting your command :\n`), command => {
+const recur = () => rl.question(chalk.blue(`${config.name} Waiting your command :\n`), async command => {
   command = command.trim()
   switch (true) {
     // Reads
@@ -23,7 +23,7 @@ const recur = () => rl.question(chalk.blue(`${config.name} Waiting your command 
     // Updates
     case /^config name \w/.test(command):
       const newName = command.replace('config name ', '')
-      updateName(newName)
+      await updateName(newName)
       break;
   }
   recur()
